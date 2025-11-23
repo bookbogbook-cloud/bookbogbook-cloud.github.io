@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title> Det tomme køkken </title> (Det her er en prototype, ikke den rigtige app)
+<title> Dit lokale tomme køkken! </title> (Det her er en prototype, ikke den rigtige app)
 <style>
   body { font-family: Cursive, sans-serif; background:#a9c7ee; margin:0; padding:20px; }
   h1 { text-align:center; color:#29353C; }
