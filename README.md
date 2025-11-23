@@ -226,9 +226,9 @@
     .toLowerCase()
     .split(',')
     .map(i  i.trim())
-    .filter(i => i);
+    .filter(i  i);
 
-  recipeList.innerHTML = '';
+  recipeList.innerHTML  '';
 
    (userIngredients.length  0) {
     recipeList.innerHTML  '<li>Skriv mindst én ingrediens.</li>';
