@@ -218,11 +218,11 @@
 ];
 
 // Get elements
- ingredientsInput = document.getElementById('ingredients');
- findBtn = document.getElementById('findBtn');
- recipeList = document.getElementById('recipeList');
+ ingredientsInput  document.getElementById('ingredients');
+ findBtn  document.getElementById('findBtn');
+ recipeList  document.getElementById('recipeList');
  findRecipes() {
-  userIngredients = ingredientsInput.value
+  userIngredients  ingredientsInput.value
     .toLowerCase()
     .split(',')
     .map(i  i.trim())
