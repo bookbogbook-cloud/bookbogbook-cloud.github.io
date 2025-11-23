@@ -225,7 +225,7 @@
   userIngredients = ingredientsInput.value
     .toLowerCase()
     .split(',')
-    .map(i => i.trim())
+    .map(i  i.trim())
     .filter(i => i);
 
   recipeList.innerHTML = '';
