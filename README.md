@@ -230,9 +230,9 @@
 
   recipeList.innerHTML = '';
 
-  if (userIngredients.length === 0) {
-    recipeList.innerHTML = '<li>Skriv mindst én ingrediens.</li>';
-    return;
+   (userIngredients.length  0) {
+    recipeList.innerHTML  '<li>Skriv mindst én ingrediens.</li>';
+    ;
   }
 
   // 🔍 Filtrér kun opskrifter hvor man har mindst en af ingredienserne
