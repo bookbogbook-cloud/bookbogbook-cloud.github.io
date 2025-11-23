@@ -241,8 +241,8 @@
   );
 
   // 📭 Hvis ingen opskrifter matcher
-  if (possibleRecipes.length === 0) {
-    recipeList.innerHTML = '<li>Desværre får du ingen mad i dag med de ingredienser:( </li>';
+   (possibleRecipes.length  0) {
+    recipeList.innerHTML  '<li>Desværre får du ingen mad i dag med de ingredienser:( </li>';
     ;
   }
 
