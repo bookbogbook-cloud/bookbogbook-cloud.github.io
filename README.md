@@ -1,7 +1,9 @@
+<!DOCTYPE html>
 <html lang="en">
+<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title> Det tomme køkken </title> Prototype skabt af Srishti Karoor og Kate Yang til konkurrencen Unge Forskere 2026
+<title> Srishti og Kates bæredygtig app! </title> (Det her er en prototype, ikke den rigtige app)
 <style>
   body { font-family: Cursive, sans-serif; background:#a9c7ee; margin:0; padding:20px; }
   h1 { text-align:center; color:#29353C; }
@@ -18,8 +20,8 @@
 </head>
 <body>
 <div class="container">
-  <h1> Det tomme køkken </h1>
-  <label for="ingredients"> Indsæt ingredienser du har (comma separated):</label>
+  <h1>Srishti og Kates bæredygtige website!!! </h1>
+  <label for="ingredients">Enter ingredients you have (comma separated):</label>
   <input type="text" id="ingredients" placeholder="fx. æg, mælk, tomater, ost">
   <button id="findBtn">Find Recipes</button>
   <h2>Matching Recipes:</h2>
