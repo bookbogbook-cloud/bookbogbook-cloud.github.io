@@ -24,7 +24,7 @@
   <label for="ingredients">Indtast de ingredienser du vil have med i din kreative ret!:):</label>
   <input type="text" id="ingredients" placeholder="fx. æg, mælk, tomater, ost">
   <button id="findBtn">Vis passende lækre opskrifter:></button>
-  <h2>Opskrifter der matcher med dine ingredienser:D:</h2>
+  <h2>Opskrifter der matcher med dine ingredienser:D </h2>
   <ul id="recipeList"></ul>
 </div>
 
