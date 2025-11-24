@@ -15,6 +15,7 @@
   ul { list-style:none; padding:0; }
   li { padding:10; border-bottom:1 solid #eee; }
   .missing { color:#F3E4F5; }
+ #   .missing { color:#F3E4F5; }
   .ready { color:#A7ABDE0; }
 </style>
 </head>
