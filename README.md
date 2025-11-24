@@ -10,7 +10,7 @@
   .container { max-width:700; margin:0 auto; background:#FFE8E1; padding:20; border-radius:12; box-shadow:0 5 15 (0,0,0,0.1);}
   label { font-weight:bold; display:block; margin-bottom:8; }
   input, button, select { padding:8; font-size:14; border-radius:6; border:1 solid #ccc; margin-bottom:12; width:100; }
-  button { background:#; color:white; border:none; cursor:pointer; }
+  button { background:#; color:pink; border:none; cursor:pointer; }
   button:hover { background:#EDAEC0; }
   ul { list-style:none; padding:0; }
   li { padding:10; border-bottom:1 solid #eee; }
