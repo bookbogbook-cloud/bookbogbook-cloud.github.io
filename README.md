@@ -339,7 +339,7 @@ const recipes = [
 
 // Get elements
 const ingredientsInput = document.getElementById('ingredients');
-  recipeList.innerHTML = '<li>Skriv mindst én ingrediens.</li>'
+recipeList.innerHTML = '<this code is exevuting </li>'
 const findBtn = document.getElementById('findBtn');
 const recipeList = document.getElementById('recipeList');
 function findRecipes() {
