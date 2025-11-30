@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title> Det tomme køkken </title> (Det her er en prototype, ikke den rigtige app)
-<style>
+<title>Det tomme køkken</title>
+<!-- Det her er en prototype, ikke den rigtige app -->
   body { font-family: Cursive, sans-serif; background:#a9c7ee; margin:0; padding:20px; }
   h1 { text-align:center; color:#29353C; }
   .container { max-width:700px; margin:0 auto; background:#FFE8E1; padding:20px; border-radius:12px; box-shadow:0 5px 15px rgba(0,0,0,0.1);}
@@ -15,7 +15,7 @@
   ul { list-style:none; padding:0; }
   li { padding:10px; border-bottom:1px solid #eee; }
   .missing { color:#F3E4F5; }
-  .ready { color:#A7ABDE0; }
+  .ready { color:#A7ABDE; }
 </style>
 </head>
 <body>
@@ -336,12 +336,11 @@ const recipes = [
   
 
 ];
-
-// Get elements
+// Hent elementer
 const ingredientsInput = document.getElementById('ingredients');
-recipeList.innerHTML = '<this code is exevuting </li>'
 const findBtn = document.getElementById('findBtn');
 const recipeList = document.getElementById('recipeList');
+
 function findRecipes() {
   const userIngredients = ingredientsInput.value
     .toLowerCase()
@@ -349,6 +348,7 @@ function findRecipes() {
     .map(i => i.trim())
     .filter(i => i);
 
+  // Nulstil listen
   recipeList.innerHTML = '';
 
   if (userIngredients.length === 0) {
@@ -356,24 +356,26 @@ function findRecipes() {
     return;
   }
 
-  // 🔍 Filtrér kun opskrifter hvor man har ALLE ingredienserne
+  // Filtrér opskrifter hvor man har ALLE ingredienserne
   const possibleRecipes = recipes.filter(recipe =>
     recipe.ingredients.every(i => userIngredients.includes(i))
   );
 
-  // 📭 Hvis ingen opskrifter matcher
+  // Hvis ingen opskrifter matcher
   if (possibleRecipes.length === 0) {
-    recipeList.innerHTML = '<li>Desværre får du ingen mad i dag med de ingredienser</li>';
+    recipeList.innerHTML = '<li>Desværre får du ingen mad i dag med de ingredienser.</li>';
     return;
   }
 
-  // 🍳 Vis alle opskrifter du kan lave
+  // Vis alle mulige opskrifter
   possibleRecipes.forEach(recipe => {
     const li = document.createElement('li');
     li.className = 'ready';
-    li.innerHTML = `<strong>${recipe.name}</strong><br>
+    li.innerHTML = `
+      <strong>${recipe.name}</strong><br>
       <em>Ingredienser:</em> ${recipe.ingredients.join(', ')}<br>
-      <em>Du kan lave denne!</em>`;
+      <em>Du kan lave denne!</em>
+    `;
     recipeList.appendChild(li);
   });
 }
