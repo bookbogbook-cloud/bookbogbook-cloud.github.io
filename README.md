@@ -35,7 +35,7 @@
       { name: "Tomatpasta", ingredients: ["tomat","pasta","olivenolie","hvidløg","salt"] },
       { name: "Ostomelet", ingredients: ["æg","mælk","ost","salt","peber"] },
       { name: "Pandekager", ingredients: ["mel","mælk","æg","sukker","smør"] }
-      { name: "Omelet med revet ost og tomat", ingredients: ["æg","mælk","tomater","ost"] }
+      { name: "Omelet med revet ost og tomat", ingredients: ["æg","mælk","tomat","ost"] }
     ];
 
     // Hent elementer
